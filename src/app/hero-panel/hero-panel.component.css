@@ -1,0 +1,21 @@
+#hero-panel {
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.form-group {
+    width: 45%;
+    min-width: 300px;
+    padding: 2.5vw;
+    margin-top:1rem
+}
+.form-group label{
+    font-weight: bold;
+}
+.form-select {
+    width: calc(45% - 10vh);
+    padding-right: 7.5vh;
+    padding-left: 7.5vh
+}
