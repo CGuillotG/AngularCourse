@@ -10,6 +10,7 @@ export class HeroPanelComponent implements OnInit {
     @Input() heroTitle: string;
     @Input() heroSubtitle: string;
     heroColor: string = "Slate Gray";
+    heroSize: string = "Small";
 
   constructor() { }
 
