@@ -1,21 +1,21 @@
 <form id="hero-panel">
     <div class="form-group">
         <label for="heroTitle">Hero Title</label>
-        <input type="text" class="form-control form-control-lg" id="heroTitle">
-        <small id="heroTitleHelp" class="form-text text-muted">Change the main title</small>
+        <input type="text" class="form-control form-control-lg" name="heroTitle" [(ngModel)]="heroTitle">
+        <small id="heroTitleHelp" class="form-text text-muted">Change the main title ({{heroTitle}})</small>
     </div>
     <div class="form-group">
         <label for="heroSubtitle">Hero Subtitle</label>
-        <input type="text" class="form-control form-control-lg" id="heroSubtitle">
-        <small id="heroTitleHelp" class="form-text text-muted">Change the subtitle</small>
+        <input type="text" class="form-control form-control-lg" name="heroSubtitle" [(ngModel)]="heroSubtitle">
+        <small id="heroSubtitleHelp" class="form-text text-muted">Change the subtitle ({{heroSubtitle}})</small>
     </div>
     <div class="form-group form-select">
         <label for="heroColor">Hero Color</label>
         <select class="form-control form-control-lg" id="heroColor">
             <option>Red</option>
             <option>Yellow</option>
-            <option>Blue</option> 
-            <option>Violet</option> 
+            <option>Blue</option>
+            <option>Violet</option>
             <option>Green</option>
             <option>Orange</option>
         </select>
@@ -25,7 +25,7 @@
         <select class="form-control form-control-lg" id="heroSize">
             <option>Small</option>
             <option>Medium</option>
-            <option>Large</option> 
+            <option>Large</option>
             <option>Full</option>
         </select>
     </div>
