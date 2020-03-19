@@ -1,3 +1,4 @@
+<app-hero heroTitle="{{heroTitle}}" heroSubtitle="{{heroSubtitle}}" heroColor="{{heroColor}}"></app-hero>
 <form id="hero-panel">
     <div class="form-group">
         <label for="heroTitle">Hero Title</label>
@@ -11,9 +12,10 @@
     </div>
     <div class="form-group form-select">
         <label for="heroColor">Hero Color</label>
-        <select class="form-control form-control-lg" id="heroColor">
+        <select class="form-control form-control-lg" name="heroColor" [(ngModel)]="heroColor">
+            <option>Slate Gray</option>
             <option>Red</option>
-            <option>Yellow</option>
+            <option>Golden Rod</option>
             <option>Blue</option>
             <option>Violet</option>
             <option>Green</option>
@@ -22,7 +24,7 @@
     </div>
     <div class="form-group form-select">
         <label for="heroSize">Hero Size</label>
-        <select class="form-control form-control-lg" id="heroSize">
+        <select class="form-control form-control-lg" name="heroSize">
             <option>Small</option>
             <option>Medium</option>
             <option>Large</option>

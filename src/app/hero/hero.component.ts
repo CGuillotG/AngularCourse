@@ -9,10 +9,15 @@ export class HeroComponent implements OnInit {
 
     @Input() heroTitle: string;
     @Input() heroSubtitle: string;
+    @Input() heroColor: string;    
 
-  constructor() { }
+  constructor() { }  
 
   ngOnInit(): void {
   }
 
+  getDarkColor = (color) => {
+    return "dark"+color.replace(/\s/g, "")
+  }
+  
 }
