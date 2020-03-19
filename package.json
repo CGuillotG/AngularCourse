@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build --prod --output-path docs --base-href=/AngularCourse/"
+    "deploy": "ng build --prod --output-path=docs --base-href=https://cguillotg.github.io/AngularCourse/"
   },
   "private": true,
   "dependencies": {
