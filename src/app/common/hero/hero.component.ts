@@ -23,6 +23,7 @@ export class HeroComponent implements OnInit {
   }
 
   getDarkColor = (color) => {
+    if (color === undefined) return "darkslategray"
     return "dark"+color.replace(/\s/g, "")
   }
 

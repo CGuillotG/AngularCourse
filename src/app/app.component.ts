@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
     heroTitle = 'Angular Demo'
     heroSubtitle = 'with 💔 by CGuillot'
+    showHome = true
+
+    toggleHome = () => {
+        this.showHome = !this.showHome
+    }
 }

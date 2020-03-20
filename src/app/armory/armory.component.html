@@ -1,0 +1,26 @@
+<br>
+<div id="armory" class="container-fluid">
+    <div class="row justify-content-around">
+        <div class="col-sm-7">
+            <div class="row justify-content-left">
+                <h4>Select a Weapon:</h4>
+            </div>
+            <br>
+            <div class="row justify-content-center">    
+                <div class="col">
+                    <select class="form-control form-control-lg" [(ngModel)]=selectedWeapon>
+                        <option *ngFor="let w of weapons" [ngValue]="w">{{w.name}}</option>
+                    </select>
+                </div>
+                <div class="col" style="max-width: fit-content;">
+                    <button class="btn btn-outline-primary btn-lg" (click)="addToCart(selectedWeapon)">Add</button>
+                </div>
+            </div>
+            <br>
+            <app-weapon-details *ngIf="!!selectedWeapon" [weapon]="selectedWeapon"></app-weapon-details>
+        </div>
+        <div class="col-sm-4">
+            <app-cart></app-cart>
+        </div>
+    </div>
+</div>

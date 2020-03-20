@@ -1,7 +1,8 @@
 #hero {
     color: white;
+    background-color: darkslategray;
     width: 100vw;
-    min-height:150px;
+    min-height:120px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

@@ -1,0 +1,31 @@
+<div class="row justify-content-center">
+    <img [src]="weapon.screenshot" alt="{{ weapon.name }}" class="img-responsive">
+</div>
+<br>
+<div class="row justify-content-center">
+    <h4>{{ weapon.name }}</h4>
+</div>
+<br>
+<div class="row justify-content-center">
+    <table class="table">
+        <tbody>
+          <tr>
+            <th scope="row">Type</th>
+            <td>{{weapon.type}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Slot</th>
+            <td>{{weapon.slot}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Glimmer</th>
+            <td>{{weapon.glimmer}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Shards</th>
+            <td>{{weapon.shards}}</td>
+          </tr>
+        </tbody>
+      </table>
+      
+</div>

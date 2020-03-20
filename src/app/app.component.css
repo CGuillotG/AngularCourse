@@ -9,3 +9,8 @@ hr {
     margin-top:2rem;
     margin-bottom:2rem;
 }
+.router-button {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
