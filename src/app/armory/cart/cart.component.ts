@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Weapon } from '../weapon.model'
+import { isObject } from 'util';
 
 @Component({
   selector: 'app-cart',
@@ -9,6 +10,8 @@ import { Weapon } from '../weapon.model'
 export class CartComponent implements OnInit {
 
     @Input() weapons:Array<Weapon>
+    @Input() totalGlimmer:number
+    @Input() totalShards:number    
 
   constructor() { }
 

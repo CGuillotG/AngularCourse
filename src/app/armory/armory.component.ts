@@ -14,6 +14,9 @@ export class ArmoryComponent implements OnInit {
     ]
     selectedWeapon:Weapon
     weaponCart:Array<Weapon> = []
+    totalGlimmer:number = 0
+    totalShards:number = 0
+
 
   constructor() { }
 
@@ -22,7 +25,8 @@ export class ArmoryComponent implements OnInit {
 
   addToCart = (weapon:Weapon) => {
       this.weaponCart.push(weapon)
-      console.log(this.weaponCart)
+      this.totalGlimmer = this.weaponCart.reduce((acc,obj) => { return  acc + obj.glimmer;}, 0)
+      this.totalShards = this.weaponCart.reduce((acc,obj) => { return  acc + obj.shards;}, 0)
   }
 
 }
