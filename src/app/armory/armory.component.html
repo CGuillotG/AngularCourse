@@ -20,7 +20,7 @@
             <app-weapon-details *ngIf="!!selectedWeapon" [weapon]="selectedWeapon"></app-weapon-details>
         </div>
         <div class="col-sm-4">
-            <app-cart></app-cart>
+            <app-cart [weapons]="weaponCart"></app-cart>
         </div>
     </div>
 </div>

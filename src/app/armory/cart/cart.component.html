@@ -1,0 +1,24 @@
+<div id="cart" class="container-fluid">
+    <h4>Cart</h4>
+    <br>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Weapon</th>
+            <th scope="col">Glimmer</th>
+            <th scope="col">Shards</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let w of weapons">
+            <th scope="row">
+                <img [src]="w.icon" alt="{{w.name}}">
+            </th>
+            <td>{{w.name}}</td>
+            <td>{{w.glimmer}}</td>
+            <td>{{w.shards}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>

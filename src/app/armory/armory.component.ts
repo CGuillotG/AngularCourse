@@ -13,7 +13,7 @@ export class ArmoryComponent implements OnInit {
         new Weapon("The Colony", 'Grenade Launcher', 'Heavy','https://bungie.net/common/destiny2_content/icons/dadeb1f4484ffdaec2420240700dc637.jpg','https://bungie.net/common/destiny2_content/screenshots/3899270607.jpg',2000,50)
     ]
     selectedWeapon:Weapon
-    cart:Array<Weapon> = []
+    weaponCart:Array<Weapon> = []
 
   constructor() { }
 
@@ -21,8 +21,8 @@ export class ArmoryComponent implements OnInit {
   }
 
   addToCart = (weapon:Weapon) => {
-      this.cart.push(weapon)
-      console.log(this.cart)
+      this.weaponCart.push(weapon)
+      console.log(this.weaponCart)
   }
 
 }
