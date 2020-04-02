@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
     heroTitle = 'Angular Demo'
     heroSubtitle = 'with 💔 by CGuillot'
-    showHome = true
+    loadedPage = 'home'
 
-    toggleHome = () => {
-        this.showHome = !this.showHome
+    onNavigate(page:string) {
+        this.loadedPage = page
     }
 }

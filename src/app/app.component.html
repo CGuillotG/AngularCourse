@@ -1,20 +1,17 @@
-<app-navbar></app-navbar>
-<div id="main" *ngIf="showHome">
-    
+<app-navbar (pageSelected)="onNavigate($event)"></app-navbar>
+
+<div id="main" *ngIf="loadedPage === 'home'">    
     <!--  * Figure out how to pass variables between siblings 😫 -->
     <!-- <app-hero heroTitle="{{heroTitle}}" heroSubtitle="{{heroSubtitle}}"></app-hero> -->
     
     <app-hero-panel heroTitle="{{heroTitle}}" heroSubtitle="{{heroSubtitle}}"></app-hero-panel>
     <hr>
     <app-button-panel></app-button-panel>
-    <hr>
-    <button class="btn btn-info btn-lg router-button" (click)="toggleHome()" title="Temporary until I learn Routing">Show Armory</button>
-    
 </div>
+
 <!-- ! Temporary until I learn routing -->
-<div id="main" *ngIf="!showHome">
+<div id="main" *ngIf="loadedPage === 'armory'">
     <app-hero heroTitle="Welcome to the Armory" heroSubtitle="Choose your weapons wisely"
     heroColor="Olive Green"></app-hero>
-    <app-armory></app-armory>    
-    <button class="btn btn-info btn-lg router-button" (click)="toggleHome()" title="Temporary until I learn Routing">Show Home</button>
+    <app-armory></app-armory>
 </div>
