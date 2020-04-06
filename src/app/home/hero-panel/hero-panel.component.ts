@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-hero-panel',
@@ -7,8 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class HeroPanelComponent implements OnInit {
 
-    @Input() heroTitle: string;
-    @Input() heroSubtitle: string;
+    heroTitle: string = 'Angular Demo';
+    heroSubtitle: string = 'with 💔 by CGuillot';
     heroColor: string = "Slate Gray";
     heroSize: string = "Small";
 

@@ -6,8 +6,6 @@ import { Component } from '@angular/core';
     styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    heroTitle = 'Angular Demo'
-    heroSubtitle = 'with 💔 by CGuillot'
     loadedPage = 'home'
 
     onNavigate(page:string) {
