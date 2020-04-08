@@ -15,3 +15,9 @@
     heroColor="Olive Green"></app-hero>
     <app-armory></app-armory>
 </div>
+
+<!-- ! Temporary until I learn routing -->
+<div id="main" *ngIf="loadedPage === 'characters'">
+    <app-hero heroTitle="Characters" heroColor="slateblue"></app-hero>
+    <app-characters></app-characters>
+</div>

@@ -10,6 +10,9 @@ import { ButtonPanelComponent } from './home/button-panel/button-panel.component
 import { ArmoryComponent } from './armory/armory.component';
 import { WeaponDetailsComponent } from './armory/weapon-details/weapon-details.component';
 import { CartComponent } from './armory/cart/cart.component';
+import { CharactersComponent } from './characters/characters.component';
+import { CharacterSelectorComponent } from './characters/character-selector/character-selector.component';
+import { CharacterDetailsComponent } from './characters/character-details/character-details.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { CartComponent } from './armory/cart/cart.component';
     ButtonPanelComponent,
     WeaponDetailsComponent,
     CartComponent,
-    ArmoryComponent
+    ArmoryComponent,
+    CharactersComponent,
+    CharacterSelectorComponent,
+    CharacterDetailsComponent
   ],
   imports: [
     BrowserModule,

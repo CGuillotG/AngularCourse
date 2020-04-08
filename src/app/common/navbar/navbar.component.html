@@ -17,8 +17,8 @@
             <li class="nav-item" [ngClass]="{'active': activePage === 'armory'}">
                 <a class="nav-link" href="#" (click)="onSelect('armory')">Armory</a>
             </li>
-        <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Vendors</a>
+            <li class="nav-item" [ngClass]="{'active': activePage === 'characters'}">
+                <a class="nav-link" href="#" (click)="onSelect('characters')">Characters</a>
             </li>
             <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
