@@ -4,7 +4,7 @@ import { Weapon } from '../models/weapon.model'
 @Component({
   selector: 'app-armory',
   templateUrl: './armory.component.html',
-  styleUrls: ['./armory.component.css']
+  styleUrls: ['./armory.component.scss']
 })
 export class ArmoryComponent implements OnInit {
     weapons:Array<Weapon> = [
