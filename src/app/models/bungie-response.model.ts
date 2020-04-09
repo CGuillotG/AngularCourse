@@ -4,6 +4,10 @@ export class BungieResponse {
             characters?: {
                 data: object,
                 privacy: number
+            },            
+            character?: {
+                data: object,
+                privacy: number
             }
         },
         public ErrorCode: number,
