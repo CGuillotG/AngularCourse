@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Weapon } from '../weapon.model'
-import { isObject } from 'util';
+import { Weapon } from '../../models/weapon.model'
 
 @Component({
   selector: 'app-cart',
