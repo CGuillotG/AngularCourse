@@ -11,7 +11,7 @@ import { ArmoryComponent } from './armory/armory.component';
 import { WeaponDetailsComponent } from './armory/weapon-details/weapon-details.component';
 import { CartComponent } from './armory/cart/cart.component';
 import { CharactersComponent } from './characters/characters.component';
-import { CharacterSelectorComponent } from './characters/character-selector/character-selector.component';
+import { CharacterSelectComponent } from './characters/character-select/character-select.component';
 import { CharacterDetailsComponent } from './characters/character-details/character-details.component';
 
 @NgModule({
@@ -25,7 +25,7 @@ import { CharacterDetailsComponent } from './characters/character-details/charac
     CartComponent,
     ArmoryComponent,
     CharactersComponent,
-    CharacterSelectorComponent,
+    CharacterSelectComponent,
     CharacterDetailsComponent
   ],
   imports: [
