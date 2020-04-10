@@ -2,11 +2,43 @@ export class BungieResponse {
     constructor(
         public Response: {
             characters?: {
-                data: object,
+                data: {
+                    [x:string]:{
+                        minutesPlayedTotal:string,
+                        light:number,
+                        stats:object,
+                        raceHash:number,
+                        genderHash:number,
+                        classHash: number,
+                        emblemPath:string,
+                        emblemBackgroundPath:string,
+                        emblemColor: {
+                            red: number,
+                            green: number,
+                            blue: number,
+                            alpha: number
+                        }
+                    }
+                },
                 privacy: number
             },            
             character?: {
-                data: object,
+                data: {
+                    minutesPlayedTotal:string,
+                    light:number,
+                    stats:object,
+                    raceHash:number,
+                    genderHash:number,
+                    classHash: number,
+                    emblemPath:string,
+                    emblemBackgroundPath:string,
+                    emblemColor: {
+                        red: number,
+                        green: number,
+                        blue: number,
+                        alpha: number
+                    }
+                },
                 privacy: number
             }
         },
