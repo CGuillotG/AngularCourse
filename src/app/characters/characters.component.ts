@@ -8,10 +8,11 @@ import { Subscription } from 'rxjs';
     styleUrls: ['./characters.component.scss']
 })
 export class CharactersComponent implements OnInit, OnDestroy {
-    
+
     private d2CharacterIdsSubscription: Subscription
-    
-    characterIds:string[] = []
+    private d2CharacterSubscriptions: Subscription[] = []
+
+    characterIds: string[] = []
 
     constructor(private d2CharactersService: D2CharactersService) { }
 
@@ -25,6 +26,7 @@ export class CharactersComponent implements OnInit, OnDestroy {
     }
     ngOnDestroy(): void {
         this.d2CharacterIdsSubscription.unsubscribe()
+        this.d2CharacterSubscriptions.forEach(subscription => subscription.unsubscribe)
     }
 
 }
