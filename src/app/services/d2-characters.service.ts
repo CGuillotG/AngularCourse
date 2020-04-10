@@ -28,4 +28,11 @@ export class D2CharactersService {
         )
     }
 
+    getCharacterFromId(characterID:string):Observable<object> {
+        let url = `https://www.bungie.net/Platform/Destiny2/${this.memType}/Profile/${this.membershipId}/Character/${characterID}/?components=characters`
+        return ajax.getJSON<BungieResponse>(url,{'X-API-Key': this.xAPIKey}).pipe(
+            map(resp => resp.Response.character.data)
+        )
+    }
+
 }
