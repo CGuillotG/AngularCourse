@@ -1,15 +1,15 @@
 <!-- <app-character-select></app-character-select> -->
 <br>
-<div class="card-deck" *ngIf="showAll">
+<div class="card-deck" *ngIf="showAll && characterData.length !== 0">
     <div class="card text-center" *ngFor="let char of characterData">
         <app-character-details [character]="char" [secsSinceRefresh]="secsSinceRefresh"></app-character-details>
     </div>
 </div>
-<div class="card text-center" *ngIf="!showAll">
+<div class="card text-center" *ngIf="!showAll && characterData.length !== 0">
     <app-character-details [character]="characterData[currentCharacter]" [secsSinceRefresh]="secsSinceRefresh"></app-character-details>
 </div>
 <br>
-<div class="button-row">
+<div class="button-row" *ngIf="characterData.length !== 0">
     <button class="btn btn-info" (click)="toggleShowAll()">
         Show <span *ngIf="!showAll">All</span><span *ngIf="showAll">One</span>
     </button>
