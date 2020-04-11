@@ -1,11 +1,11 @@
 <!-- <app-character-select></app-character-select> -->
 <br>
 <div class="card-deck" *ngIf="showAll">
-    <div class="card" *ngFor="let char of characterData">
+    <div class="card text-center" *ngFor="let char of characterData">
         <app-character-details [character]="char" [secsSinceRefresh]="secsSinceRefresh"></app-character-details>
     </div>
 </div>
-<div class="card" *ngIf="!showAll">
+<div class="card text-center" *ngIf="!showAll">
     <app-character-details [character]="characterData[currentCharacter]" [secsSinceRefresh]="secsSinceRefresh"></app-character-details>
 </div>
 <br>
