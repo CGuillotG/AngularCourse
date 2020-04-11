@@ -1,7 +1,26 @@
 <img src="https://www.bungie.net/{{character.emblemBackgroundPath}}" class="card-img-top" alt="...">
-<div class="card-body">
-    <h5 class="card-title">{{character.pClass}}</h5>
-    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.
-        This content is a little bit longer.</p>
+<div class="card-body" [style.color]="getRGBString()">
+    <h3 class="card-title">
+        {{character.pClass}}
+        <span class="light-level"><sup>🔸</sup>{{character.light}}</span>
+    </h3>
+    <h5 class="card-subtitle mb-2 text-muted">
+        {{character.race}} {{character.gender}}
+    </h5>
+</div>
+<div class="card-body" [style.color]="getRGBString()">
+    <p class="card-text"><b>Mobility:</b> {{character.mobility}}</p>
+    <p class="card-text"><b>Resilience:</b> {{character.resilience}}</p>
+    <p class="card-text"><b>Recovery:</b> {{character.recovery}}</p>
+</div>
+<div class="card-body" [style.color]="getRGBString()">
+    <p class="card-text"><b>Discipline:</b> {{character.discipline}}</p>
+    <p class="card-text"><b>Intellect:</b> {{character.intellect}}</p>
+    <p class="card-text"><b>Strength:</b> {{character.strength}}</p>
+</div>
+<div class="card-body" [style.color]="getRGBString()">
+    <p class="card-text"><b>Total Time Played:</b> {{character.time}}</p>
+</div>
+<div class="card-body" [style.color]="getRGBString()">
     <p class="card-text"><small class="text-muted">Last updated {{secsSinceRefresh}} secs ago</small></p>
 </div>
