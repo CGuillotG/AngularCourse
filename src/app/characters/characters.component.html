@@ -1,3 +1,16 @@
 <!-- <app-character-select></app-character-select> -->
-<p>Character works!<br>Logging everything in the console for now</p>
-<!-- <app-character-details></app-character-details> -->
+<br>
+<div class="card-deck" *ngIf="showAll">
+    <div class="card" *ngFor="let char of characterData">
+        <app-character-details [character]="char" [secsSinceRefresh]="secsSinceRefresh"></app-character-details>
+    </div>
+</div>
+<div class="card" *ngIf="!showAll">
+    <app-character-details [character]="characterData[currentCharacter]" [secsSinceRefresh]="secsSinceRefresh"></app-character-details>
+</div>
+<br>
+<div class="button-row">
+    <button class="btn btn-info" (click)="toggleShowAll()">
+        Show <span *ngIf="!showAll">All</span><span *ngIf="showAll">One</span>
+    </button>
+</div>
