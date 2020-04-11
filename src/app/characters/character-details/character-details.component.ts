@@ -16,4 +16,8 @@ export class CharacterDetailsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getRGBString() {
+    return 'rgb('+this.character.emblemColor.red+','+this.character.emblemColor.green+','+this.character.emblemColor.blue+')'
+  }
+
 }
